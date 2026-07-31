@@ -1,0 +1,8 @@
+*.pdf
+chroma_db_fsr/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
