@@ -9,6 +9,26 @@
 - 이전 대화 맥락을 반영해 후속 질문을 독립 질문으로 재작성하는 대화형 검색
 - Streamlit 기반 웹 UI, 사이드바에서 OpenAI API 키 입력
 
+## 실행 화면
+
+### 보고서 기반 질의응답
+
+gpt-4o-mini 기반 RAG로 보고서 종합평가를 요약해 답변합니다.
+
+![보고서 기반 질의응답](images/main_answer.png)
+
+### 출처 표시와 예상 비용
+
+답변마다 근거가 된 PDF 출처, 면책 문구, 입력·출력 토큰 수와 예상 비용을 함께 표시합니다.
+
+![출처와 예상 비용 표시](images/source_and_cost.png)
+
+### 대화 맥락을 반영한 후속 질문
+
+"구체적으로 어떤 업권이 문제야?"처럼 앞 대화에 기대는 질문을 독립 질문으로 재작성한 뒤 검색하고, 재작성된 질문을 화면에 보여줍니다.
+
+![후속 질문 재작성](images/follow_up_rewrite.png)
+
 ## 기술 스택
 
 Python, Streamlit, LangChain, ChromaDB, OpenAI API (GPT + Embeddings), PyPDF2 / pdfplumber
